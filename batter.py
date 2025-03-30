@@ -22,7 +22,7 @@ stats['SB_rate'] = stats['SB'] / stats['AB']
 features = ['H_rate', '2B_rate', 'HR_rate', 'BB_rate', 'SO_rate','SB_rate']
 X = stats[features].fillna(0).values  #dense matrix
 
-# Standardize features for euclidean distance
+#standardize features for euclidean distance
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
